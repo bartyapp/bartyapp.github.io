@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145463522-2"></script>
-        <script>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="https://www.barty.app/favicon.png">
+    <link rel="shortcut icon" href="https://www.barty.app/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://www.barty.app/favicon.png" type="image/png" />
+    <title>Yönlendiriliyor...</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145463522-2"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-145463522-2');
-        </script>
-        <style>
-            .loader {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                z-index: 1;
-                width: 150px;
-                height: 150px;
-                margin: -75px 0 0 -75px;
-                border: 16px solid #f3f3f3;
-                border-radius: 50%;
-                border-top: 16px solid #194A17;
-                width: 120px;
-                height: 120px;
-                -webkit-animation: spin 2s linear infinite;
-                animation: spin 2s linear infinite;
-                }
-            
-            @-webkit-keyframes spin {
-              0% { -webkit-transform: rotate(0deg); }
-              100% { -webkit-transform: rotate(360deg); }
-            }
-            
-            @keyframes spin {
-              0% { transform: rotate(0deg); }
-              100% { transform: rotate(360deg); }
-            }
-            </style>
-    </head>
-    <body>
-        <div class="loader"></div>
-        <script>
-            function getOS() {
-                var userAgent = window.navigator.userAgent,
-                    platform = window.navigator.platform,
-                    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-                    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-                    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-                    os = null;
+    </script>
+    <style>
+        .loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #194A17;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
 
-                if (macosPlatforms.indexOf(platform) !== -1) {
-                    os = 'macos';
-                } else if (iosPlatforms.indexOf(platform) !== -1) {
-                    os = 'ios';
-                } else if (windowsPlatforms.indexOf(platform) !== -1) {
-                    os = 'windows';
-                } else if (/Android/.test(userAgent)) {
-                    os = 'android';
-                } else if (!os && /Linux/.test(platform)) {
-                    os = 'linux';
-                }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
 
-                return os;
-                }
-                let timer = setTimeout(function(){
-                    if(getOS()==='ios'){
-                        window.location.href = "https://apps.apple.com/tr/app/bartme-kitap-takas-platformu/id1475653790?l=tr";
-                    }else if(getOS()==='android'){
-                        window.location.href = "https://play.google.com/store/apps/details?id=co.bartme.bartme";
-                    }else{
-                        window.location.href = "https://www.barty.app";
-                    }
-                },600)
-        </script>
-    </body>
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <script>
+        function getOS() {
+            var userAgent = window.navigator.userAgent,
+                platform = window.navigator.platform,
+                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+                os = null;
+
+            if (macosPlatforms.indexOf(platform) !== -1) {
+                os = 'macos';
+            } else if (iosPlatforms.indexOf(platform) !== -1) {
+                os = 'ios';
+            } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                os = 'windows';
+            } else if (/Android/.test(userAgent)) {
+                os = 'android';
+            } else if (!os && /Linux/.test(platform)) {
+                os = 'linux';
+            }
+
+            return os;
+        }
+        let timer = setTimeout(function () {
+            if (getOS() === 'ios') {
+                window.location.href = "https://apps.apple.com/tr/app/bartme-kitap-takas-platformu/id1475653790?l=tr";
+            } else if (getOS() === 'android') {
+                window.location.href = "https://play.google.com/store/apps/details?id=co.bartme.bartme";
+            } else {
+                window.location.href = "https://www.barty.app";
+            }
+        }, 600)
+    </script>
+</body>
+
 </html>
