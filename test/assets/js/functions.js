@@ -13,8 +13,58 @@
 	10. YOUTUBE BACKGROUND
 	11. COLOR SWITCHER
 */
+
+/*-----------------read more-------------------*/
+function readMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Daha Fazla Oku";
+      moreText.style.display = "none";
+      btnText.style.background = "#f8f8f8";
+      btnText.style.color = "#000000";
+    
+    } else {
+    
+      dots.style.display = "none";
+      btnText.innerHTML = "Daha Az Oku";
+      moreText.style.display = "inline";
+      moreText.style.transform = "transition: visibility 0s, opacity 0.5s linear;";
+      btnText.style.background = "#04D684";
+      btnText.style.color = "white";
+    }
+  }
+
+
+
 (function($) {
     "use strict";
+
+
+
+
+    /*------------accordion-----------------------*/
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
     /* ------------------  Background INSERT ------------------ */
 
