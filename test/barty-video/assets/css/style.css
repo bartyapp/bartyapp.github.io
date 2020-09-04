@@ -50,9 +50,17 @@ custom.css and it will override the style in this file. You have been warned! :)
 
 @font-face {
     font-family: 'Gotham';
-	src: url('https://www.barty.app/fonts/gotham-light.ttf');
-	src: url('https://www.barty.app/fonts/gotham-medium.ttf');
+    src: url('https://www.barty.app/fonts/gotham-medium.ttf');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Light.eot');
+    src: url('https://www.barty.app/fonts/gotham-light.ttf');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
