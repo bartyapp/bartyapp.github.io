@@ -1,12 +1,12 @@
 {
     "android": {
-        "currentVersionCode": 23,
+        "currentVersionCode": 25,
         "currentVersion": "3.0.1",
         "minVersion": 23,
         "minVersionCode": "3.0.1"
     },
     "ios": {
-        "currentVersionCode": 23,
+        "currentVersionCode": 25,
         "currentVersion": "3.0.1",
         "minVersion": 23,
         "minVersionCode": "3.0.1"
