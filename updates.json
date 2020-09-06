@@ -2,13 +2,13 @@
     "android": {
         "currentVersionCode": 23,
         "currentVersion": "3.0.1",
-        "minVersion": 22,
+        "minVersion": 23,
         "minVersionCode": "3.0.1"
     },
     "ios": {
         "currentVersionCode": 23,
         "currentVersion": "3.0.1",
-        "minVersion": 22,
+        "minVersion": 23,
         "minVersionCode": "3.0.1"
     }
 }
