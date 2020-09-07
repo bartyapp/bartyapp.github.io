@@ -64,8 +64,6 @@ custom.css and it will override the style in this file. You have been warned! :)
     font-display: swap;
 }
 
-
-
 body,
 html {
 	overflow-x: hidden;
@@ -1724,6 +1722,8 @@ section {
 	line-height: 100px;
 	color: #ffffff;
 	padding: 0;
+	min-width: 100px;
+	text-align: center;
 }
 
 .nav .open > a,
@@ -1818,7 +1818,7 @@ section {
 
 .header-fixed .navbar.affix .navbar-nav > li > a:hover::before,
 .header-fixed .navbar.affix .navbar-nav > li.active > a:before {
-	background-color: #222222;
+	background-color: #04D684;
 	
 }
 
@@ -2361,6 +2361,9 @@ li a:hover,
 	margin-left: 5px;
 }
 */
+
+
+
 .slider form {
 	margin-bottom: 30px !important;
 }
@@ -2531,6 +2534,11 @@ li a:hover,
 	line-height: 1;
 	margin-bottom: 40px;
 }
+.feature-panel .feature--icon img {
+	width: 15%;
+	margin-top: 0;
+
+}
 
 .feature-panel .feature--icon i {
 	-webkit-transition: all 0.3s linear;
@@ -2633,9 +2641,11 @@ li a:hover,
 	border-color: #3498db;
 	color: #ffffff;
 }
-
+#binlerceUrun .heading .heading--title {
+margin-bottom: 0px;
+}
 .feature img {
-	margin-top: 120px;
+	margin-top: 0px;
 	margin-bottom: 30px;
 }
 
@@ -2653,8 +2663,8 @@ li a:hover,
 .feature img {
 	max-width: 100%;
 	height: auto;
-	margin-top: 70px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 }
 
@@ -2684,14 +2694,16 @@ li a:hover,
 /*------------------------------------*\
     #Call To Action
 \*------------------------------------*/
-.cta .btn-hover:first-of-type {
+.cta .btn-hover {
 	margin-right: 15px;
+	margin-top: 0px;
+		
 }
 
 .cta .btn-hover {
 	margin-top: 10px;
 	padding: 10px;
-	border: 3px solid white;
+	border: none;
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
@@ -2701,16 +2713,24 @@ li a:hover,
 	-ms-transition: 0.4s ease-in-out;
 	-o-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;
+	width: 50%;
+	
 }
 
+
+
+.cta .btn-hover img{
+	width: 100%;
+
+}
 
 @media only screen and (min-width: 992px)  {
 
 	.cta .btn-hover {
-		margin-top: 50px;
+		margin-top: 0px;
 		
 	}
-	
+
 
 }
 @media only screen and (min-width: 768px)  {
@@ -2723,9 +2743,7 @@ li a:hover,
 
 }
 
-#download .btn-hover:first-of-type {
-	margin-top: 100px;
-}
+
 
 .cta .btn-hover img {
 	-webkit-transition: all 0.5s ease-in-out;
@@ -2778,7 +2796,7 @@ li a:hover,
 }
 
 .cta img {
-	max-width: 100%;
+	max-width: 40%;
 	height: auto;
 }
 }
@@ -2988,7 +3006,7 @@ li a:hover,
 
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .accordion .active, .accordion:hover {
 	background-color: #04D684;
 	color: white;
 	border-color: white;
@@ -3683,6 +3701,7 @@ body.page-dark {
 	color: #04D684;
 	font-size: 24px;
 	padding-top: 20px;
+
 }
 
 .sozlesme h3
@@ -3735,7 +3754,7 @@ body.page-dark {
 }
 .sbuttons {
 	bottom: 70px;
-	right: -50%; 
+	right: -50%;
 	position: fixed;
 	margin: 1em;
 	left: 0;
