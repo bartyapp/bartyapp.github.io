@@ -68,6 +68,10 @@ body,
 html {
 	overflow-x: hidden;
 }
+body{
+	min-width: 100vw;
+	min-height: 100vh;
+}
 
 html {
 	font-size: 13px;
@@ -111,18 +115,18 @@ a {
 }
 
 a:hover {
-	color: #217dbb;
+	color:white;
 	text-decoration: none;
 }
 
 a:focus {
-	color: #217dbb;
+	color:white;
 	outline: none;
 	text-decoration: none;
 }
 
 a:active {
-	color: #217dbb;
+	color:white;
 	outline: none;
 	text-decoration: none;
 }
@@ -2535,7 +2539,7 @@ li a:hover,
 	margin-bottom: 40px;
 }
 .feature-panel .feature--icon img {
-	width: 15%;
+	width: 18%;
 	margin-top: 0;
 
 }
@@ -3752,9 +3756,23 @@ body.page-dark {
 	color: black;
 
 }
+.fixed-socialmedia{
+	position: fixed;
+	bottom:30px;
+	right:30px;
+}
+.facebook{
+	display:flex;
+}
+.twitter{
+	display:flex;
+}
+.instagram{
+	display:flex;
+}
 .sbuttons {
+	right:10px;
 	bottom: 70px;
-	right: -50%;
 	position: fixed;
 	margin: 1em;
 	left: 0;
@@ -3767,25 +3785,30 @@ body.page-dark {
 	border-radius: 50%;
 	text-align: center;
 	color: white;
-	margin: 20px auto 0;
+	margin: 13px auto 0;
 	box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
-	-webkit-transition: all .1s ease-out;
-	transition: all .1s ease-out;
 	position: relative;
   }
   .sbutton > i {
 	font-size: 38px;
 	line-height: 60px;
-	transition: all .2s ease-in-out;
-	transition-delay: 2s;
   }
-  .sbutton:active,
+  @media only screen and (max-width: 600px) {
+  .sbutton{
+	width:40px;
+	height:40px;
+  }
+  .sbutton > i {
+	font-size: 28px;
+	line-height: 40px;
+  }
+}
+/*   .sbutton:active,
   .sbutton:focus,
   .sbutton:hover {
-	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
-  }
-  .sbutton:not(:last-child) {
+  } */
+  /* .sbutton:not(:last-child) {
 	width: 60px;
 	height: 60px;
 	margin: 20px auto 0;
@@ -3849,7 +3872,7 @@ body.page-dark {
   [tooltip]:hover:after {
 	visibility: visible;
 	opacity: 1;
-  }
+  } */
   .sbutton.mainsbutton {
 	background: #2ab1ce;
   }
@@ -3870,8 +3893,6 @@ body.page-dark {
 	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
 	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-	 
   }
 
   .barty-para img {

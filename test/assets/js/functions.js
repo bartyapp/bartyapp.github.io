@@ -19,28 +19,26 @@ function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
-  
+
     if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Daha Fazla Oku";
-      moreText.style.display = "none";
-      btnText.style.background = "#f8f8f8";
-      btnText.style.color = "#000000";
-    
+        dots.style.display = "inline";
+        btnText.innerHTML = "Daha Fazla Oku";
+        moreText.style.display = "none";
+        btnText.style.background = "#f8f8f8";
+        btnText.style.color = "#000000";
+
     } else {
-    
-      dots.style.display = "none";
-      btnText.innerHTML = "Daha Az Oku";
-      moreText.style.display = "inline";
-      moreText.style.transform = "transition: visibility 0s, opacity 0.5s linear;";
-      btnText.style.background = "#04D684";
-      btnText.style.color = "white";
+        dots.style.display = "none";
+        btnText.innerHTML = "Daha Az Oku";
+        moreText.style.display = "inline";
+        btnText.style.background = "#04D684";
+        btnText.style.color = "white";
     }
-  }
+}
 
 
 
-(function($) {
+(function ($) {
     "use strict";
 
 
@@ -48,28 +46,28 @@ function readMore() {
 
     /*------------accordion-----------------------*/
     var acc = document.getElementsByClassName("accordion");
-var i;
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
-  });
-}
 
     /* ------------------  Background INSERT ------------------ */
 
     var $bgSection = $(".bg-section");
-    $bgSection.each(function() {
+    $bgSection.each(function () {
         var bgSrc = $(this).children("img").attr("src");
         var bgUrl = 'url(' + bgSrc + ')';
         $(this).parent().css("backgroundImage", bgUrl);
@@ -106,12 +104,12 @@ for (i = 0; i < acc.length; i++) {
 
     /* ------------------  AJAX CAMPAIGN MONITOR  ------------------ */
 
-    $('#campaignmonitor').submit(function(e) {
+    $('#campaignmonitor').submit(function (e) {
         e.preventDefault();
         $.getJSON(
             this.action + "?callback=?",
             $(this).serialize(),
-            function(data) {
+            function (data) {
                 if (data.Status === 400) {
                     alert("Error: " + data.Message);
                 } else { // 200
@@ -122,7 +120,7 @@ for (i = 0; i < acc.length; i++) {
 
     /* ------------------ OWL CAROUSEL ------------------ */
 
-    $(".carousel").each(function() {
+    $(".carousel").each(function () {
         var $Carousel = $(this);
         $Carousel.owlCarousel({
             loop: $Carousel.data('loop'),
@@ -148,7 +146,7 @@ for (i = 0; i < acc.length; i++) {
     /* ------------------  SCROLL TO ------------------ */
 
     var $Ascroll = $('a[data-scroll="scrollTo"]');
-    $Ascroll.on('click', function(event) {
+    $Ascroll.on('click', function (event) {
         var target = $($(this).attr('href'));
         if (target.length) {
             event.preventDefault();
@@ -159,14 +157,14 @@ for (i = 0; i < acc.length; i++) {
     });
 
     /* ------------------ NAV SPLIT ------------------ */
-	
+
     var $section = $('.section'),
         $bodyScroll = $('.body-scroll');
     if ($bodyScroll.length > 0) {
-        $(window).on("scroll", function() {
-            $section.each(function() {
+        $(window).on("scroll", function () {
+            $section.each(function () {
                 var sectionID = $(this).attr("id"),
-                    sectionTop = $(this).offset().top - 100,
+                    sectionTop = $(this).offset().top - 400,
                     sectionHight = $(this).outerHeight(),
                     wScroll = $(window).scrollTop(),
                     $navHref = $("a[href='#" + sectionID + "']"),
@@ -181,7 +179,7 @@ for (i = 0; i < acc.length; i++) {
 
 
     /* ------------------  WOW ANIMATED ------------------ */
-	
+
     var wow = new WOW({
 
         boxClass: 'wow', // animated element css class (default is wow)
@@ -202,13 +200,13 @@ for (i = 0; i < acc.length; i++) {
         $portfolioAll = $("#portfolio-all");
 
     // init Isotope For Portfolio
-    protfolioFinder.on("click", function(e) {
+    protfolioFinder.on("click", function (e) {
         e.preventDefault();
         $portfolioFilter.find("a.active-filter").removeClass("active-filter");
         $(this).addClass("active-filter");
     });
     if (portfolioLength > 0) {
-        $portfolioAll.imagesLoaded().progress(function() {
+        $portfolioAll.imagesLoaded().progress(function () {
             $portfolioAll.isotope({
                 filter: "*",
                 animationOptions: {
@@ -220,10 +218,10 @@ for (i = 0; i < acc.length; i++) {
             });
         });
     }
-    protfolioFinder.on("click", function(e) {
+    protfolioFinder.on("click", function (e) {
         e.preventDefault();
         var $selector = $(this).attr("data-filter");
-        $portfolioAll.imagesLoaded().progress(function() {
+        $portfolioAll.imagesLoaded().progress(function () {
             $portfolioAll.isotope({
                 filter: $selector,
                 animationOptions: {
@@ -236,10 +234,10 @@ for (i = 0; i < acc.length; i++) {
             return false;
         });
     });
-	
+
     /* ------------------  YOUTUBE BACKGROUND  ------------------ */
-	
-    $(".bg-ytvideo").each(function() {
+
+    $(".bg-ytvideo").each(function () {
 
         var vidId = $(this).data("vid-id"),
             vidAutoPlay = $(this).data("autoplay"),
@@ -286,7 +284,7 @@ for (i = 0; i < acc.length; i++) {
         $colorOption = $(".color-options"),
         $colorOptionUl = $(".color-options ul li");
 
-    $gearCheck.on("click", function() {
+    $gearCheck.on("click", function () {
         $colorOption.toggle();
     });
 
@@ -305,7 +303,7 @@ for (i = 0; i < acc.length; i++) {
         .eq(10).css("backgroundColor", "#8e44ad").end()
         .eq(11).css("backgroundColor", "#c0392b").end();
 
-    $colorOptionUl.on("click", function() {
+    $colorOptionUl.on("click", function () {
         $("link[href*='theme']").attr("href", $(this).attr("data-value"));
     });
 }(jQuery));
