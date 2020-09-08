@@ -3802,6 +3802,12 @@ body.page-dark {
 .instagram{
 	display:flex;
 }
+.youtube{
+	display:flex;
+}
+.linkedin{
+	display:flex;
+}
 .sbuttons {
 	right:10px;
 	bottom: 70px;
@@ -3908,11 +3914,11 @@ body.page-dark {
   .sbutton.mainsbutton {
 	background: #2ab1ce;
   }
-  .sbutton.gplus {
-	background: #F44336;
+  .sbutton.linkedin {
+	background: #0072b1;
   }
-  .sbutton.pinteres {
-	background: #e60023;
+  .sbutton.youtube {
+	background: #ff0000;
   }
   .sbutton.twitt {
 	background: #03A9F4;
