@@ -2991,7 +2991,7 @@ margin-bottom: 0px;
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	height: calc(100vh - 25px);
+	height: calc(100%);
 	border: 10px solid #ffffff;
 
 	/*left: 25%;*/
