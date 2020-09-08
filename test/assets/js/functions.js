@@ -21,6 +21,7 @@ function readMore() {
     var btnText = document.getElementById("myBtn");
 
     if (dots.style.display === "none") {
+        document.documentElement.scrollTop += 180;
         dots.style.display = "inline";
         btnText.innerHTML = "Daha Fazla Oku";
         moreText.style.display = "none";
@@ -28,6 +29,7 @@ function readMore() {
         btnText.style.color = "#000000";
 
     } else {
+        document.documentElement.scrollTop -= 180;
         dots.style.display = "none";
         btnText.innerHTML = "Daha Az Oku";
         moreText.style.display = "inline";
