@@ -223,8 +223,9 @@ h6 {
 }
 
 p {
-	color: #999999;
-	font-size: 13px;
+	
+	color: #12233F;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 22px;
 }
@@ -1610,7 +1611,7 @@ section {
 }
 
 .heading .heading--desc {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 0;
@@ -2289,7 +2290,7 @@ li a:hover,
 	font-family: 'Gotham';
 	font-weight: 300;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 24px;
 
 	line-height: 32px;
 	margin-bottom: 29px;
@@ -2355,7 +2356,7 @@ li a:hover,
 }
 
 .slider .slide--bio {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.5;
 	padding: 0 10px;
 	text-align: center;
@@ -2381,7 +2382,7 @@ li a:hover,
 
 .slider .slide--holder img {
 	position: relative;
-	right: 0;
+	right: 4vw;
 	bottom: 0;
 }
 }
@@ -2398,7 +2399,7 @@ li a:hover,
 }
 
 .slider .slide--bio {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -2437,8 +2438,8 @@ li a:hover,
 }
 
 .testimonial-panel .testimonial--body p {
-	color: #aaaaaa;
-	font-size: 14px;
+	color: #12293F;
+    font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 0;
@@ -2447,7 +2448,7 @@ li a:hover,
 
 .testimonial-panel .testimonial--meta h5 {
 	color: #222222;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 18px;
 	margin-bottom: 0;
@@ -2572,7 +2573,7 @@ li a:hover,
 	font-family: 'Gotham';
 	font-style: normal;
 	color: #222222;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 500;
 	line-height: 1;
 	margin-bottom: 19px;
@@ -2580,7 +2581,7 @@ li a:hover,
 }
 
 .feature-panel .feature--content p {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 0;
@@ -2714,6 +2715,7 @@ margin-bottom: 0px;
 .cta .btn-hover {
 	margin-top: 10px;
 	padding: 10px;
+	padding-left: 0px;
 	border: none;
 	position: relative;
 	display: inline-block;
@@ -2825,17 +2827,37 @@ margin-bottom: 0px;
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
 
 .cta .btn-hover:first-of-type {
-	margin-right: 0;
+	margin-right: -15%;
 }
 
 .cta img {
-	max-width: 40%;
+	max-width: 45%;
 	height: auto;
+	margin-left: 15%;
+    max-width: 35vw;
 }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+	.cta .btn-hover:first-of-type {
+		margin-right: -5%;
+
+	}
+	
+	.cta img {
+		max-width: 45%;
+		height: auto;
+		margin-left: 0%;
+		max-width: 45vw;
+	}
+	.slider .slide--holder img {
+		right: 3vw !important; 
+	}
+	}
 
 /* Small Devices, Tablets */
 /*------------------------------------*\
@@ -3021,6 +3043,7 @@ margin-bottom: 0px;
 	transition: 0.4s;
 	font-family: 'Gotham';
 	font-weight: 500;
+	font-size: 20px;
 	transition: height 5s;
 	
 
@@ -3070,6 +3093,9 @@ margin-bottom: 0px;
 	left: 50%;
 	min-width: 200px;
 	min-height: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #04D684;
 }
 
 .read-more-button:hover,

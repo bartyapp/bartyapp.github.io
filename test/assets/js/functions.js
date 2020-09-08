@@ -26,7 +26,7 @@ function readMore() {
         btnText.innerHTML = "Daha Fazla Oku";
         moreText.style.display = "none";
         btnText.style.background = "#f8f8f8";
-        btnText.style.color = "#000000";
+        btnText.style.color = "#04D684";
 
     } else {
         document.documentElement.scrollTop -= 180;
