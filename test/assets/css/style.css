@@ -3932,8 +3932,8 @@ body.page-dark {
   .sbutton {
 	position:fixed;
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	text-align: center;
 	color: white;
@@ -3956,8 +3956,8 @@ body.page-dark {
 	position: relative;
   }
   .sbutton > i {
-	font-size: 38px;
-	line-height: 60px;
+	font-size: 28px;
+	line-height: 45px;
   }
   .sbutton-inline > i {
 	font-size: 28px;
