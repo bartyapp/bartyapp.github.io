@@ -38,6 +38,18 @@ function readMore() {
     }
 }
 
+function readMore2() {
+    var btnText = document.getElementById("myBtn");
+    if (btnText.innerHTML === "Daha Az Oku") {
+        btnText.style.background = "#f8f8f8";
+
+
+    } else {
+        btnText.style.background = "#04D684";
+        btnText.style.color = "white";
+    }
+}
+
 
 
 (function ($) {
