@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check_on</title>
+    <g id="App_V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="takas_teklifi_gonder_2" transform="translate(-329.000000, -526.000000)" stroke="#13D88B" stroke-width="2">
+            <path d="M342,551 C348.627417,551 354,545.627417 354,539 C354,532.372583 348.627417,527 342,527 C335.372583,527 330,532.372583 330,539 C330,545.627417 335.372583,551 342,551 Z M336,539 L340.8,542.6 L346.8,534.2" id="check_on"></path>
+        </g>
+    </g>
+</svg>

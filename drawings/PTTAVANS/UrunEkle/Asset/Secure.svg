@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Secure</title>
+    <g id="App_V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03" transform="translate(-34.000000, -320.000000)" stroke="#04D684" stroke-width="1.5">
+            <path d="M37,331 L37,326 C37,323 39,321 42,321 C45,321 47,323 47,326 L47,331 M42,343 C45.8659932,343 49,339.865993 49,336 C49,332.134007 45.8659932,329 42,329 C38.1340068,329 35,332.134007 35,336 C35,339.865993 38.1340068,343 42,343 Z M42,335 L42,339 M42,336 C42.5522847,336 43,335.552285 43,335 C43,334.447715 42.5522847,334 42,334 C41.4477153,334 41,334.447715 41,335 C41,335.552285 41.4477153,336 42,336 Z" id="Secure"></path>
+        </g>
+    </g>
+</svg>
