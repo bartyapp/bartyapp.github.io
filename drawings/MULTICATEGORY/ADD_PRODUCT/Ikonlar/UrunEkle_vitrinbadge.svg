@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="23px" viewBox="0 0 122 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UrunEkle_vitrinbadge</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UrunEkle_vitrinbadge">
+            <rect id="Rectangle-Copy-29" fill="#04D684" x="0" y="0" width="122" height="23" rx="11.5"></rect>
+            <text id="Vitrin-Fotoğrafı" font-family="Gotham-Medium, Gotham" font-size="13" font-weight="400" letter-spacing="-0.312" fill="#FFFFFF">
+                <tspan x="12" y="16">Vitrin Fotoğrafı</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

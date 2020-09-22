@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UrunEkle_popupuyari</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UrunEkle_popupuyari">
+            <circle id="Good-Copy" fill="#F49E21" cx="30" cy="30" r="30"></circle>
+            <line x1="30" y1="26" x2="30" y2="44" id="Line-7" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="30" y1="16.5" x2="30" y2="17.5" id="Line-7-Copy" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="App_V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_anasayfa_banner" transform="translate(-337.000000, -16.000000)" stroke="#04D684" stroke-width="2">
+            <path d="M340,35 L340,25 C340,20.582 343.582,17 348,17 C352.418,17 356,20.582 356,25 L356,35 M337,35 L359,35 M351,35 L351,36 C351,37.657 349.657,39 348,39 C346.343,39 345,37.657 345,36 L345,35" id="Path"></path>
+        </g>
+    </g>
+</svg>

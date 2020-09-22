@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Secure</title>
+    <g id="App_V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="KrediKarti" transform="translate(-34.000000, -458.000000)" stroke="#04D684" stroke-width="1.5">
+            <path d="M37,469 L37,464 C37,461 39,459 42,459 C45,459 47,461 47,464 L47,469 M42,481 C45.8659932,481 49,477.865993 49,474 C49,470.134007 45.8659932,467 42,467 C38.1340068,467 35,470.134007 35,474 C35,477.865993 38.1340068,481 42,481 Z M42,473 L42,477 M42,474 C42.5522847,474 43,473.552285 43,473 C43,472.447715 42.5522847,472 42,472 C41.4477153,472 41,472.447715 41,473 C41,473.552285 41.4477153,474 42,474 Z" id="Secure"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>urundetay_map@2x</title>
+    <g id="App_V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_UrunDetay" transform="translate(-20.000000, -417.000000)" stroke="#00856C">
+            <path d="M30.1,427.1 L32.9,427.1 L35,432 L21,432 L23.1,427.1 L25.9,427.1 M28.7,422.2 C28.7,422.58675 28.38675,422.9 28,422.9 C27.61325,422.9 27.3,422.58675 27.3,422.2 C27.3,421.81325 27.61325,421.5 28,421.5 C28.38675,421.5 28.7,421.81325 28.7,422.2 M23.8,422.2 C23.8,425.7 28,429.2 28,429.2 C28,429.2 32.2,425.7 32.2,422.2 C32.2,419.808221 30.3195008,418 28,418 C25.6804992,418 23.8,419.808221 23.8,422.2 Z" id="urundetay_map"></path>
+        </g>
+    </g>
+</svg>
