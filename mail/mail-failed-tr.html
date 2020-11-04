@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barty - Eposta Adresiniz Doğrulanmıştır</title>
+    <link rel="shortcut icon" type="image/png" href="https://www.barty.app/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        html {
+            margin: 0px !important;
+            overflow: hidden !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        body {
+            cursor: pointer;
+            flex: 1;
+            position: relative;
+            margin: 0px !important;
+            overflow: hidden !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #FC100D;
+
+        }
+
+        .mainbox {
+            background-color: #FC100D;
+            margin: auto;
+            height: 350px;
+            width: 350px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            position: absolute;
+        }
+
+        .err {
+            color: #ffffff;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 8rem;
+            position: absolute;
+            left: 13%;
+            top: 8%;
+        }
+
+        .far {
+            position: absolute;
+            font-size: 9rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 17%;
+            color: #ffffff;
+        }
+
+        .faz {
+            position: absolute;
+            font-size: 3rem;
+            left: 36.2%;
+            top: 17%;
+            color: #ffffff;
+        }
+
+        .err2 {
+            color: #ffffff;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 8rem;
+            position: absolute;
+            left: 66%;
+            top: 8%;
+        }
+
+        .msg {
+            margin-top: 60px;
+            letter-spacing: -1.0px;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.75rem !important;
+            position: absolute;
+            left: 0%;
+            top: 45%;
+            width: 100%;
+            color: white;
+        }
+
+        .msg2 {
+            letter-spacing: -1.6px;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 2.0rem;
+            position: fixed;
+            left: 0%;
+            bottom: calc(0%);
+            margin-bottom: 28px;
+            width: 100%;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0A2239;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mainbox">
+        <div style="flex: 1;">
+            <div role="a" href="https://go.barty.app/?emailVerification=1" style="justify-content: center;">
+                <div style="margin-top: 50px;"
+                    class="animate__animated animate__wobble animate__infinite animate__slow">
+                    <i class="far fas fa-times-circle"></i>
+                </div>
+            </div>
+            <div class="msg animate__animated animate__slideInLeft">
+                Mail adresiniz doğrulanamadı<br />
+                <p>
+            </div>
+        </div>
+    </div>
+    <a href="https://go.barty.app/?emailVerification=1" target="__blank" class="msg2">
+        <div class=" animate__animated animate__slideInLeft">Barty App</div>
+    </a>
+    <a href="https://go.barty.app/?emailVerification=1" target="__blank"
+        style="text-decoration: underline;font-size:30px;position: absolute;top:calc(100vh - 73px);right:70px !important;"><i
+            class="faz fas fa-arrow-circle-right animate__animated animate__slideInUp"></i></a>
+    <script>
+        document.onclick = function () {
+            window.location.href = "https://go.barty.app";
+        }</script>
+
+</body>
+
+</html>
