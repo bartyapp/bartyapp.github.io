@@ -3884,6 +3884,9 @@ body.page-dark {
 .youtube{
 	display:flex;
 }
+.bartyblog{
+	display:flex;
+}
 .linkedin{
 	display:flex;
 }
@@ -4025,6 +4028,9 @@ body.page-dark {
   .sbutton.youtube {
 	background: #ff0000;
   }
+  .sbutton.blogbarty {
+	background: #29313A;
+  }
   .sbutton.twitt {
 	background: #03A9F4;
   }
@@ -4046,6 +4052,9 @@ body.page-dark {
   }
   .sbutton-inline.youtube {
 	background: #ff0000;
+  }
+  .sbutton-inline.blogbarty {
+	background: #29313A;
   }
   .sbutton-inline.twitt {
 	background: #03A9F4;
