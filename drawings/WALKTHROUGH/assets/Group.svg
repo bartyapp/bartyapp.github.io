@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08_8" transform="translate(-170.000000, -388.000000)" stroke="#00856C">
+            <path d="M178,403 C181.865993,403 185,399.865993 185,396 C185,392.134007 181.865993,389 178,389 C174.134007,389 171,392.134007 171,396 C171,399.865993 174.134007,403 178,403 Z M178,398.1 L178,397.4 C178,396.7 178,396.35 178.7,396 C179.4,395.65 180.1,395.3 180.1,394.25 C180.1,393.55 179.4,392.5 178,392.5 C176.6,392.5 175.9,393.384896 175.9,394.6 M178,398.8 L178,400.2" id="Group"></path>
+        </g>
+    </g>
+</svg>
