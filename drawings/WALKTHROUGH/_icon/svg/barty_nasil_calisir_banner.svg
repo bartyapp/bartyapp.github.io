@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="63px" viewBox="0 0 341 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>barty_nasil_calisir_banner</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_8" transform="translate(-17.000000, -120.000000)">
+            <g id="barty_nasil_calisir_banner" transform="translate(17.000000, 120.000000)">
+                <rect id="Rectangle" fill="#0A2239" x="3" y="0" width="338" height="63" rx="5"></rect>
+                <text id="Barty-nasıl-çalışır?" font-family="Gotham-Book, Gotham" font-size="13" font-weight="300" line-spacing="19" fill="#FFFFFF">
+                    <tspan x="37" y="23">Barty nasıl çalışır? Takas Odası nasıl yönetilir? </tspan>
+                    <tspan x="37" y="42">Barty Puan nedir? Detaylı bilgi için tıklayın…</tspan>
+                </text>
+                <text id="?" font-family="Gotham-Bold, Gotham" font-size="17" font-weight="bold" line-spacing="19" fill="#FFFFFF">
+                    <tspan x="17" y="34">?</tspan>
+                </text>
+                <path d="M15.4681725,38 L16.0780287,34.5031847 C22.1211499,33.2420382 27,30.2611465 27,22.9808917 L27,22.866242 C27,15.2420382 21.5667351,11 13.5831622,11 C7.54004107,11 3.21560575,13.522293 0,17.1910828 L5.10061602,22.9808917 C7.65092402,20.343949 10.312115,19.0254777 13.4168378,19.0254777 C16.6324435,19.0254777 18.5174538,20.5159236 18.5174538,23.0955414 L18.5174538,23.2101911 C18.5174538,26.2484076 15.8008214,28.1401274 8.81519507,28.4267516 L8.53798768,28.7133758 L9.81314168,38 L15.4681725,38 Z M17,51 L17,42 L8,42 L8,51 L17,51 Z" id="?" fill="#FFFFFF" fill-rule="nonzero" opacity="0.2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

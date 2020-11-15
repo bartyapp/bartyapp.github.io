@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="336px" height="68px" viewBox="0 0 336 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>100_guvenli_alisveris</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="336" height="68"></rect>
+    </defs>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_1" transform="translate(-19.000000, -598.000000)">
+            <g id="100_guvenli_alisveris" transform="translate(19.000000, 598.000000)">
+                <g id="Secure">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#32B1CC" xlink:href="#path-1"></use>
+                    <path d="M-2,31 L-2,18.5 C-2,11 3,6 10.5,6 C18,6 23,11 23,18.5 L23,31 M10.5,61 C20.1649831,61 28,53.1649831 28,43.5 C28,33.8350169 20.1649831,26 10.5,26 C0.835016879,26 -7,33.8350169 -7,43.5 C-7,53.1649831 0.835016879,61 10.5,61 Z M10.5,41 L10.5,51 M10.5,43.5 C11.8807119,43.5 13,42.3807119 13,41 C13,39.6192881 11.8807119,38.5 10.5,38.5 C9.11928813,38.5 8,39.6192881 8,41 C8,42.3807119 9.11928813,43.5 10.5,43.5 Z" stroke="#FFFFFF" stroke-width="5" opacity="0.2" mask="url(#mask-2)"></path>
+                </g>
+                <text id="Gönderici-ve-alıcı-k" font-family="Gotham-Book, Gotham" font-size="13" font-weight="300" line-spacing="17" letter-spacing="-0.529412" fill="#FFFFFF">
+                    <tspan x="36" y="44">Gönderici ve alıcı koruma politikamıza göz atın.</tspan>
+                </text>
+                <text id="%100-güvenli-alışver" font-family="Gotham-Medium, Gotham" font-size="15" font-weight="400" line-spacing="17" letter-spacing="-0.264705882" fill="#FFFFFF">
+                    <tspan x="36" y="25">%100 güvenli alışveriş</tspan>
+                </text>
+                <path d="M14,33 L14,28 C14,25 16,23 19,23 C22,23 24,25 24,28 L24,33 M19,45 C22.8659932,45 26,41.8659932 26,38 C26,34.1340068 22.8659932,31 19,31 C15.1340068,31 12,34.1340068 12,38 C12,41.8659932 15.1340068,45 19,45 Z M19,37 L19,41 M19,38 C19.5522847,38 20,37.5522847 20,37 C20,36.4477153 19.5522847,36 19,36 C18.4477153,36 18,36.4477153 18,37 C18,37.5522847 18.4477153,38 19,38 Z" id="Secure" stroke="#FFFFFF" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

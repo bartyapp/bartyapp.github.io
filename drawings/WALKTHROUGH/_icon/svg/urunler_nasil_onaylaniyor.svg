@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="336px" height="68px" viewBox="0 0 336 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>urunler_nasil_onaylaniyor</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05_1" transform="translate(-19.000000, -286.000000)">
+            <g id="urunler_nasil_onaylaniyor" transform="translate(19.000000, 286.000000)">
+                <g id="List-Copy">
+                    <g id="Mask">
+                        <rect id="Rectangle-Copy-13" fill="#E9686A" x="0" y="0" width="336" height="68"></rect>
+                        <text id="Ürünler-nasıl-onayla" font-family="Gotham-Medium, Gotham" font-size="13" font-weight="400" line-spacing="17" letter-spacing="-0.229411765" fill="#FFFFFF">
+                            <tspan x="40" y="33">Ürünler nasıl onaylanıyor?</tspan>
+                        </text>
+                        <g id="Group-Copy-7" transform="translate(309.000000, 28.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                            <line x1="0.24" y1="0.24" x2="5.52" y2="6" id="Line"></line>
+                            <line x1="0.207486468" y1="11.793614" x2="5.48748647" y2="6.03361401" id="Line-Copy"></line>
+                        </g>
+                    </g>
+                    <path d="M14.1304348,49.0434783 L35,49.0434783 M14.1304348,35.1304348 L35,35.1304348 M14.1304348,21.2173913 L35,21.2173913 M-5,47.3043478 L0.217391304,52.5217391 L8.91304348,43.826087 M-5,33.3913043 L0.217391304,38.6086957 L8.91304348,29.9130435 M8.91304348,16 L0.217391304,24.6956522 L-5,19.4782609" stroke="#FFFFFF" stroke-width="2" opacity="0.200009301"></path>
+                </g>
+                <path d="M20.0869565,42.6956522 L30,42.6956522 M20.0869565,36.0869565 L30,36.0869565 M20.0869565,29.4782609 L30,29.4782609 M11,41.8695652 L13.4782609,44.3478261 L17.6086957,40.2173913 M11,35.2608696 L13.4782609,37.7391304 L17.6086957,33.6086957 M17.6086957,27 L13.4782609,31.1304348 L11,28.6521739" id="List" stroke="#FFFFFF" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

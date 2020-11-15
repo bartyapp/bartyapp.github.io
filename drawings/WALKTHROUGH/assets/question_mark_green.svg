@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>question_mark_green</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08_8" transform="translate(-170.000000, -372.000000)" stroke="#00856C">
+            <g id="Group-3" transform="translate(52.000000, 304.000000)">
+                <path d="M126,83 C129.865993,83 133,79.8659932 133,76 C133,72.1340068 129.865993,69 126,69 C122.134007,69 119,72.1340068 119,76 C119,79.8659932 122.134007,83 126,83 Z M126,78.1 L126,77.4 C126,76.7 126,76.35 126.7,76 C127.4,75.65 128.1,75.3 128.1,74.25 C128.1,73.55 127.4,72.5 126,72.5 C124.6,72.5 123.9,73.384896 123.9,74.6 M126,78.8 L126,80.2" id="question_mark_green"></path>
+            </g>
+        </g>
+    </g>
+</svg>

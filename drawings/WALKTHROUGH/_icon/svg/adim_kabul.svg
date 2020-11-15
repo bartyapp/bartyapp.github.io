@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>adim_kabul</title>
+    <g id="App_V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_2" transform="translate(-72.000000, -445.000000)">
+            <g id="adim_kabul" transform="translate(72.000000, 445.000000)">
+                <circle id="Oval-Copy" fill="#1791B4" cx="30" cy="30" r="30"></circle>
+                <path d="M30,45 C38.2842712,45 45,38.2842712 45,30 C45,21.7157288 38.2842712,15 30,15 C21.7157288,15 15,21.7157288 15,30 C15,38.2842712 21.7157288,45 30,45 Z M22.5,30 L28.5,34.5 L36,24" id="Good-Copy-3" stroke="#FFFFFF" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
