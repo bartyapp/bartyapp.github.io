@@ -1,1 +1,323 @@
-function readMore() { var e = document.getElementById("dots"), t = document.getElementById("more"), a = document.getElementById("myBtn"); "none" === e.style.display ? (document.documentElement.scrollTop += 180, e.style.display = "inline", a.innerHTML = "Daha Fazla Oku", t.style.display = "none", a.style.background = "#f8f8f8", a.style.color = "#04D684") : (document.documentElement.scrollTop -= 180, e.style.display = "none", a.innerHTML = "Daha Az Oku", t.style.display = "inline", a.style.background = "#04D684", a.style.color = "white") } function readMore2() { var e = document.getElementById("myBtn"); "Daha Az Oku" === e.innerHTML ? e.style.background = "#f8f8f8" : (e.style.background = "#04D684", e.style.color = "white") } !function (e) { "use strict"; var t, a = document.getElementsByClassName("accordion"); for (t = 0; t < a.length; t++)a[t].addEventListener("click", function () { this.classList.toggle("active"); var e = this.nextElementSibling; "block" === e.style.display ? e.style.display = "none" : e.style.display = "block" }); e(".bg-section").each(function () { var t = "url(" + e(this).children("img").attr("src") + ")"; e(this).parent().css("backgroundImage", t), e(this).parent().addClass("bg-section"), e(this).remove() }), e(".header-fixed .navbar-fixed-top").affix({ offset: { top: 50 } }), e(".mailchimp").ajaxChimp({ url: "http://wplly.us5.list-manage.com/subscribe/post?u=91b69df995c1c90e1de2f6497&id=aa0f2ab5fa", callback: function (t) { "success" === t.result ? e(".subscribe-alert").html('<h5 class="alert alert-success">' + t.msg + "</h5>").fadeIn(1e3) : "error" === t.result && e(".subscribe-alert").html('<h5 class="alert alert-danger">' + t.msg + "</h5>").fadeIn(1e3) } }), e("#campaignmonitor").submit(function (t) { t.preventDefault(), e.getJSON(this.action + "?callback=?", e(this).serialize(), function (e) { 400 === e.Status ? alert("Error: " + e.Message) : alert("Success: " + e.Message) }) }), e(".carousel").each(function () { var t = e(this); t.owlCarousel({ loop: t.data("loop"), autoplay: t.data("autoplay"), margin: t.data("space"), nav: t.data("nav"), dots: t.data("dots"), dotsSpeed: t.data("speed"), responsive: { 0: { items: 1 }, 600: { items: t.data("slide-res") }, 1000: { items: t.data("slide") } } }) }), e('a[data-scroll="scrollTo"]').on("click", function (t) { var a = e(e(this).attr("href")); a.length && (t.preventDefault(), e("html, body").animate({ scrollTop: a.offset().top - 100 }, 1e3)) }); var o = e(".section"); e(".body-scroll").length > 0 && e(window).on("scroll", function () { o.each(function () { var t = e(this).attr("id"), a = e(this).offset().top - 400, o = e(this).outerHeight(), s = e(window).scrollTop(), l = e("a[href='#" + t + "']"), n = e(".nav-split").find(l).parent(); s > a - 1 && s < a + o - 1 && (n.addClass("active"), n.siblings().removeClass("active")) }) }), new WOW({ boxClass: "wow", animateClass: "animated", offset: 50, mobile: !1, live: !0 }).init(); var s = e(".portfolio-filter"), l = s.length, n = s.find("a"), i = e("#portfolio-all"); n.on("click", function (t) { t.preventDefault(), s.find("a.active-filter").removeClass("active-filter"), e(this).addClass("active-filter") }), l > 0 && i.imagesLoaded().progress(function () { i.isotope({ filter: "*", animationOptions: { duration: 750, itemSelector: ".portfolio-item", easing: "linear", queue: !1 } }) }), n.on("click", function (t) { t.preventDefault(); var a = e(this).attr("data-filter"); i.imagesLoaded().progress(function () { return i.isotope({ filter: a, animationOptions: { duration: 750, itemSelector: ".portfolio-item", easing: "linear", queue: !1 } }), !1 }) }), e(".bg-ytvideo").each(function () { var t = e(this).data("vid-id"), a = e(this).data("autoplay"), o = e(this).data("start-at"), s = e(this).data("mute"), l = e(this).data("opacity"), n = e(this).data("plugin-logo"), i = e(this).data("controls"), r = e(this).data("fall-cover"); "" !== a && null != a || (a = !0), "" !== o && null != o || (o = 0), "" !== s && null != s || (s = !0), "" !== l && null != l || (l = 1), "" !== n && null != n || (n = !1), "" !== i && null != i || (i = !1), "" !== r && null != r || (r = ""), e(this).data("property", "{videoURL:'http://youtu.be/" + t + "',containment:'self',autoPlay:" + a + ", mute:" + s + ", startAt:" + o + ", opacity:" + l + ",showYTLogo:" + n + ",showControls:" + i + ",stopMovieOnBlur:false,mobileFallbackImage:'" + r + "'}") }), e(".bg-ytvideo").mb_YTPlayer(); var r = e(".gear-check"), c = e(".color-options"), d = e(".color-options ul li"); r.on("click", function () { c.toggle() }), d.eq(0).css("backgroundColor", "#2196f3").end().eq(1).css("backgroundColor", "#ff5722").end().eq(2).css("backgroundColor", "#512da8").end().eq(3).css("backgroundColor", "#222222").end().eq(4).css("backgroundColor", "#859596").end().eq(5).css("backgroundColor", "#1abc9c").end().eq(6).css("backgroundColor", "#3498db").end().eq(7).css("backgroundColor", "#27ae60").end().eq(8).css("backgroundColor", "#f39c12").end().eq(9).css("backgroundColor", "#d2527f").end().eq(10).css("backgroundColor", "#8e44ad").end().eq(11).css("backgroundColor", "#c0392b").end(), d.on("click", function () { e("link[href*='theme']").attr("href", e(this).attr("data-value")) }) }(jQuery);
+/*global jQuery */
+/* Contents
+// ------------------------------------------------>
+    1.  Background INSERT
+    2.  HEADER AFFIX
+    3.	AJAX MAILCHIMP
+    4.  AJAX CAMPAIGN MONITOR 
+    5.  OWL CAROUSEL
+    6.  SCROLL TO
+    7.  NAV SPLIT
+    8.  WOW ANIMATED
+    9.  PORTFOLIO FLITER
+    10. YOUTUBE BACKGROUND
+    11. COLOR SWITCHER
+*/
+
+/*-----------------read more-------------------*/
+function readMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        document.documentElement.scrollTop += 180;
+        dots.style.display = "inline";
+        btnText.innerHTML = "Daha Fazla Oku";
+        moreText.style.display = "none";
+        btnText.style.background = "#f8f8f8";
+        btnText.style.color = "#04D684";
+
+    } else {
+        document.documentElement.scrollTop -= 180;
+        dots.style.display = "none";
+        btnText.innerHTML = "Daha Az Oku";
+        moreText.style.display = "inline";
+        btnText.style.background = "#04D684";
+        btnText.style.color = "white";
+    }
+}
+
+function readMore2() {
+    var btnText = document.getElementById("myBtn");
+    if (btnText.innerHTML === "Daha Az Oku") {
+        btnText.style.background = "#f8f8f8";
+
+
+    } else {
+        btnText.style.background = "#04D684";
+        btnText.style.color = "white";
+    }
+}
+
+
+
+(function ($) {
+    "use strict";
+
+
+
+
+    /*------------accordion-----------------------*/
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+    /* ------------------  Background INSERT ------------------ */
+
+    var $bgSection = $(".bg-section");
+    $bgSection.each(function () {
+        var bgSrc = $(this).children("img").attr("src");
+        var bgUrl = 'url(' + bgSrc + ')';
+        $(this).parent().css("backgroundImage", bgUrl);
+        $(this).parent().addClass("bg-section");
+        $(this).remove();
+    });
+
+    /* ------------------ HEADER AFFIX ------------------ */
+
+    var $navAffix = $(".header-fixed .navbar-fixed-top");
+    $navAffix.affix({
+        offset: {
+            top: 50
+        }
+    });
+
+    /* ------------------  AJAX MAILCHIMP ------------------ */
+
+    $('.mailchimp').ajaxChimp({
+        url: "http://wplly.us5.list-manage.com/subscribe/post?u=91b69df995c1c90e1de2f6497&id=aa0f2ab5fa", //Replace with your own mailchimp Campaigns URL.
+        callback: chimpCallback
+
+    });
+
+    function chimpCallback(resp) {
+        if (resp.result === 'success') {
+            $('.subscribe-alert').html('<h5 class="alert alert-success">' + resp.msg + '</h5>').fadeIn(1000);
+            //$('.subscribe-alert').delay(6000).fadeOut();
+
+        } else if (resp.result === 'error') {
+            $('.subscribe-alert').html('<h5 class="alert alert-danger">' + resp.msg + '</h5>').fadeIn(1000);
+        }
+    }
+
+    /* ------------------  AJAX CAMPAIGN MONITOR  ------------------ */
+
+    $('#campaignmonitor').submit(function (e) {
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Error: " + data.Message);
+                } else { // 200
+                    alert("Success: " + data.Message);
+                }
+            });
+    });
+
+    /* ------------------ OWL CAROUSEL ------------------ */
+
+    $(".carousel").each(function () {
+        var $Carousel = $(this);
+        $Carousel.owlCarousel({
+            loop: $Carousel.data('loop'),
+            autoplay: $Carousel.data("autoplay"),
+            margin: $Carousel.data('space'),
+            nav: $Carousel.data('nav'),
+            dots: $Carousel.data('dots'),
+            dotsSpeed: $Carousel.data('speed'),
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: $Carousel.data('slide-res')
+                },
+                1000: {
+                    items: $Carousel.data('slide'),
+                }
+            }
+        });
+    });
+
+    /* ------------------  SCROLL TO ------------------ */
+
+    var $Ascroll = $('a[data-scroll="scrollTo"]');
+    $Ascroll.on('click', function (event) {
+        var target = $($(this).attr('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 1000);
+        }
+    });
+
+    /* ------------------ NAV SPLIT ------------------ */
+
+    var $section = $('.section'),
+        $bodyScroll = $('.body-scroll');
+    if ($bodyScroll.length > 0) {
+        $(window).on("scroll", function () {
+            $section.each(function () {
+                var sectionID = $(this).attr("id"),
+                    sectionTop = $(this).offset().top - 400,
+                    sectionHight = $(this).outerHeight(),
+                    wScroll = $(window).scrollTop(),
+                    $navHref = $("a[href='#" + sectionID + "']"),
+                    $nav = $('.nav-split').find($navHref).parent();
+                if (wScroll > sectionTop - 1 && wScroll < sectionTop + sectionHight - 1) {
+                    $nav.addClass('active');
+                    $nav.siblings().removeClass('active');
+                }
+            });
+        });
+    }
+
+
+    /* ------------------  WOW ANIMATED ------------------ */
+
+    var wow = new WOW({
+
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 50, // distance to the element when triggering the animation (default is 0)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true // act on asynchronously loaded content (default is true)
+
+    });
+
+    wow.init();
+
+    /* ------------------ PORTFOLIO FLITER ------------------ */
+
+    var $portfolioFilter = $(".portfolio-filter"),
+        portfolioLength = $portfolioFilter.length,
+        protfolioFinder = $portfolioFilter.find("a"),
+        $portfolioAll = $("#portfolio-all");
+
+    // init Isotope For Portfolio
+    protfolioFinder.on("click", function (e) {
+        e.preventDefault();
+        $portfolioFilter.find("a.active-filter").removeClass("active-filter");
+        $(this).addClass("active-filter");
+    });
+    if (portfolioLength > 0) {
+        $portfolioAll.imagesLoaded().progress(function () {
+            $portfolioAll.isotope({
+                filter: "*",
+                animationOptions: {
+                    duration: 750,
+                    itemSelector: ".portfolio-item",
+                    easing: "linear",
+                    queue: false,
+                }
+            });
+        });
+    }
+    protfolioFinder.on("click", function (e) {
+        e.preventDefault();
+        var $selector = $(this).attr("data-filter");
+        $portfolioAll.imagesLoaded().progress(function () {
+            $portfolioAll.isotope({
+                filter: $selector,
+                animationOptions: {
+                    duration: 750,
+                    itemSelector: ".portfolio-item",
+                    easing: "linear",
+                    queue: false,
+                }
+            });
+            return false;
+        });
+    });
+
+    /* ------------------  YOUTUBE BACKGROUND  ------------------ */
+
+    $(".bg-ytvideo").each(function () {
+
+        var vidId = $(this).data("vid-id"),
+            vidAutoPlay = $(this).data("autoplay"),
+            vidStartAt = $(this).data("start-at"),
+            vidMute = $(this).data("mute"),
+            vidOpacity = $(this).data("opacity"),
+            vidShowPluginLogo = $(this).data("plugin-logo"),
+            vidShowControls = $(this).data("controls"),
+            vidFallBackImg = $(this).data("fall-cover");
+
+        if (vidAutoPlay === "" || vidAutoPlay === null || vidAutoPlay === undefined) {
+            vidAutoPlay = true;
+        }
+        if (vidStartAt === "" || vidStartAt === null || vidStartAt === undefined) {
+            vidStartAt = 0;
+        }
+        if (vidMute === "" || vidMute === null || vidMute === undefined) {
+            vidMute = true;
+        }
+        if (vidOpacity === "" || vidOpacity === null || vidOpacity === undefined) {
+            vidOpacity = 1;
+        }
+        if (vidShowPluginLogo === "" || vidShowPluginLogo === null || vidShowPluginLogo === undefined) {
+            vidShowPluginLogo = false;
+        }
+        if (vidShowControls === "" || vidShowControls === null || vidShowControls === undefined) {
+            vidShowControls = false;
+        }
+        if (vidFallBackImg === "" || vidFallBackImg === null || vidFallBackImg === undefined) {
+            vidFallBackImg = "";
+        }
+
+        $(this).data(
+            "property",
+            "{videoURL:'http://youtu.be/" + vidId + "',containment:'self',autoPlay:" + vidAutoPlay + ", mute:" + vidMute + ", startAt:" + vidStartAt + ", opacity:" + vidOpacity + ",showYTLogo:" + vidShowPluginLogo + ",showControls:" + vidShowControls + ",stopMovieOnBlur:false,mobileFallbackImage:'" + vidFallBackImg + "'}"
+        );
+    });
+
+    $(".bg-ytvideo").mb_YTPlayer();
+
+    /* ------------------  COLOR SWITCHER ------------------ */
+
+    var $gearCheck = $(".gear-check"),
+        $colorOption = $(".color-options"),
+        $colorOptionUl = $(".color-options ul li");
+
+    $gearCheck.on("click", function () {
+        $colorOption.toggle();
+    });
+
+
+    $colorOptionUl
+        .eq(0).css("backgroundColor", "#2196f3").end()
+        .eq(1).css("backgroundColor", "#ff5722").end()
+        .eq(2).css("backgroundColor", "#512da8").end()
+        .eq(3).css("backgroundColor", "#222222").end()
+        .eq(4).css("backgroundColor", "#859596").end()
+        .eq(5).css("backgroundColor", "#1abc9c").end()
+        .eq(6).css("backgroundColor", "#3498db").end()
+        .eq(7).css("backgroundColor", "#27ae60").end()
+        .eq(8).css("backgroundColor", "#f39c12").end()
+        .eq(9).css("backgroundColor", "#d2527f").end()
+        .eq(10).css("backgroundColor", "#8e44ad").end()
+        .eq(11).css("backgroundColor", "#c0392b").end();
+
+    $colorOptionUl.on("click", function () {
+        $("link[href*='theme']").attr("href", $(this).attr("data-value"));
+    });
+}(jQuery));
